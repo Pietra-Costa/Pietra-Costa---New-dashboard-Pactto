@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+
+    --bg-color: #232225 ; 
+    --main-color: #1DBBA5;
+    --text-color: white;
+    --side-bar: #2F2F2F;
+    --hover:#1cbaa6;
+    --done: #bab8b8;
+    --login:#FFBA03;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: var(--bg-color);
+
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 20px;
+}
+
+.form-container{
+    display: flex;
+    width: 1000px;
+    height: 600px;
+    border: 3px solid rgba(255, 255, 255, .3);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    overflow:hidden;
+}
+
+.col-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 55%;
+    background: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(5px);
+    border-radius: 0 30% 20% 0;
+    transition: border-radius .3s ;
+}
+
+.text h2{
+    font-size: 40px;
+    color: white;
+}
+
+.text p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.col-2{
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.btn-box{
+    display: flex; 
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px
+    
+}
+
+.btn{
+    font-weight: 500;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, .2);  
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transition: .2s;
+    color: white;
+}
+
+.btn-1{
+    background: var(--login); 
+}
+
+.btn .btn-2{
+    background-color: var(--login);
+}
+
+.btn:hover{
+    opacity: 0.85;
+}
+
+.login-form{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 4vw;
+    transition: .3s;
+}
+
+.form-title{
+    margin: 40px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.form-inputs{
+    width: 100%;
+}
+
+.input-box{
+    position: relative;
+}
+
+
+
+.input-field{
+    width: 100%;
+    height: 55px;
+    padding: 0 10px;
+    margin: 10px 0;
+    color: white;
+    background: rgba(255, 255, 255, .2);
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+::placeholder{
+    color: white;
+    font-size: 15px
+}
+
+.input-box .icon{
+    position: absolute;
+    height: 80%;
+    right: 15px;
+    transform: translateY(50%);
+    color: white;
+
+}
+
+.forget-pass{
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+}
+
+.forget-pass a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forget-pass a:hover{
+    text-decoration:underline;
+}
+
+.input-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 55px;
+    padding: 0 15px;
+    margin: 10px 0;
+    color: white;
+    background: #21264D;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transition: .3s;
+    background: var(--login);
+    text-decoration: none;
+}
+
+.input-submit:hover{
+    gap: 15px;
+    box-shadow: none;
+}
+
+.social-login{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-login i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    color: white;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.social-login i:hover{
+    transform: scale(0.9);
+}
+
+.register-form{
+    position: absolute;
+    left: -50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 4vw;
+    transition: .3s;
+}
+
+.register-form .form-title{
+    margin-block: 40px 20px ;
+}
+
+.social-register{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.social-register i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    color: white;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+   
+
+}
